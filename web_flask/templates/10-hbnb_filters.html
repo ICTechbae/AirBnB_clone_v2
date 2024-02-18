@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <HTML lang="en">
     <HEAD>
-<<<<<<< HEAD
         <TITLE>AirBnb Clone</TITLE>
         <LINK rel="stylesheet" href="static/styles/4-common.css">
         <LINK rel="stylesheet" href="static/styles/3-header.css">
@@ -46,28 +45,5 @@
         <FOOTER>
             Holberton School
         </FOOTER>
-=======
-        <TITLE>HBNB</TITLE>
-    </HEAD>
-    <BODY>
-    {% if state is mapping %}
-        <H1>States</H1>
-        <UL>
-        {% for s in state.values()|sort(attribute="name") %}
-            <LI>{{ s.id }}: <B>{{ s.name }}</B></LI>
-        {% endfor %}
-        </UL>
-    {% elif state is defined %}
-        <H1>State: {{ state.name }}</H1>
-        <H3>Cities:</H3>
-        <UL>
-        {% for city in state.cities|sort(attribute="name") %}
-            <LI>{{ city.id }}: <B>{{ city.name }}</B></LI>
-        {% endfor %}
-        </UL>
-    {% else %}
-        <H1>Not found!</H1>
-    {% endif %}
->>>>>>> becb00c63de51b795f6121ba1cba1e66db92aa30
     </BODY>
 </HTML>
